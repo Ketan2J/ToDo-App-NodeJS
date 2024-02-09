@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot Mono', monospace;
+}
+body {
+    background-color: #f3f3f3;
+}
+.container-fluid {
+    height: fit-content;
+}
+.container-fluid .row {
+    height: 100%;
+}
+.container-fluid .row main h1 {
+    font-weight: 700;
+    color: #9381ff;
+}
+.container-fluid .row main h4 {
+    font-weight: 500;
+    color: #b8b8ff;
+}
+.container-fluid .row main .outter-form {
+    width: 30%;
+    height: auto;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: all .8s;
+}
+.container-fluid .row main .outter-form:hover {
+    box-shadow: 0 0 20px -3px rgba( 0, 0, 0, 0.3);
+}
+.container-fluid .row main .outter-form div input {
+    font-weight: 400;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: transparent;
+}
+.container-fluid .row main .outter-form div input::placeholder {
+    font-weight: 400;
+    color: #ccc;
+}
+.container-fluid .row main .outter-form div input:focus {
+    box-shadow: none;
+    border: 2px solid #b8b8ff;
+}
+.container-fluid .row main .outter-form .btn {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #9381ff;
+    border: 2px solid #9381ff;
+    border-radius: 10px;
+    float: right;
+    transition: all .5s;
+}
+.container-fluid .row main .outter-form .btn:hover {
+    background-color: #000;
+    border: 2px solid #000;
+}
+.container-fluid .row main .task-display {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-fluid .row main .task-display .task-box {
+    width: 23%;
+    border: 2px solid #b8b8ff;
+    border-radius: 15px;
+}
+.container-fluid .row main .task-display .task-box .btn {
+    float: right;
+    font-size: 12px;
+    padding: 3px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b8b8ff;
+}
+.container-fluid .row main .task-display .task-box .btn:focus {
+    box-shadow: none;
+}
+.container-fluid .row main .task-display .task-box form {
+    width: 100%;
+}
+.container-fluid .row main .task-display .task-box form div {
+    width: 100%;
+}
+.container-fluid .row main .task-display .task-box form div .goal-head {
+    color: #9381ff;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+}
+.container-fluid .row main .task-display .task-box form div .goal-name {
+    color: #b8b8ff;
+    width: 100%;
+}
+@media only screen and (max-width:1289px) {
+    .container-fluid .row main form {
+        width: 50%;
+    }
+    .container-fluid .row main .task-display {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:879px) {
+    .container-fluid .row main .outter-form {
+        width: 70%;
+    }
+    .container-fluid .row main .task-display {
+        width: 70%;
+    }
+}
+@media only screen and (max-width:572px) {
+    .container-fluid .row main .outter-form {
+        width: 90%;
+    }
+    .container-fluid .row main .task-display {
+        width: 90%;
+        flex-direction: column;
+    }
+    .container-fluid .row main .task-display .task-box {
+        width: 90%;
+        height: fit-content;
+    }
+}
+@media only screen and (max-width:389px) {
+    .container-fluid .row main .outter-form {
+        width: 100%;
+    }
+    .container-fluid .row main .task-display {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container-fluid .row main .task-display .task-box {
+        width: 90%;
+        height: fit-content;
+    }
+}

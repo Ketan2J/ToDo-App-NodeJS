@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <main class="w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+                <h1 class="text-center">To Do App</h1>
+                <h4 class="text-center">Stay Organized: Your daily task at a glance</h4>
+                <form action="/" method="POST" class="outter-form my-3 p-2">
+                    <div class="mb-3">
+                        <input type="text" name="todo_head" placeholder="Craft a clear GOAL title..." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="todo_name" placeholder="Capture your goals in a single line..." class="form-control" required>
+                    </div>
+                    <button class="btn" type="submit">Add</button>
+                </form>
+                <div class="task-display" id="task-display">
+                    <% for(let i = 0; i < todos1.length; i++) { %>
+                        <div class="task-box my-2 p-2">
+                            <form action="/delete/<%= todos1[i]._id %>" method="post">
+                                <button class="btn" name="del_todo" type="submit">❌</button>
+                                <div class="mb-3">
+                                    <label class="goal-head"><%= todos1[i].todo_head %></label>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="goal-name"><%= todos1[i].todo_name %></label>
+                                </div>
+                            </form>
+                        </div>
+                    <% } %>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
