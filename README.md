@@ -8,14 +8,14 @@ A simple NodeJS ToDo App to manage tasks efficiently.
 👉Getting Started 🏳️
 1. Clone the repo📂 ```git clone https://github.com/Ketan2J/ToDo-App-NodeJS```
    - npm init
-   - Install all dependencies:
-   - npm i body-parser
-   - npm i ejs
-   - npm i mongoose
-   - npm i express
-   - npm i nodemon
-2. Now run app: ```npm start```
-3. Open any browser and go to http://localhost:3000
+2. Install all dependencies:
+   - ```npm i body-parser```
+   - ```npm i ejs```
+   - ```npm i mongoose```
+   - ```npm i express```
+   - ```npm i nodemon```
+3. Now run app: ```npm start```
+4. Open any browser and go to http://localhost:3000
 
 👉Technologies Used🤖
 1. NodeeJS
