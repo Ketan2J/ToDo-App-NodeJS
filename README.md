@@ -6,15 +6,15 @@ A simple NodeJS ToDo App to manage tasks efficiently.
 - Add your daily todo and after complition delete the todo.
 
 👉Getting Started 🏳️
-1. Clone the repo📂 ```git clone https://github.com/Ketan2J/ToDo-App-NodeJS
-   a. npm init
-   b. Install all dependencies:
-     > npm i body-parser
-     > npm i ejs
-     > npm i mongoose
-     > npm i express
-     > npm i nodemon
-2. Now run app: ```npm start
+1. Clone the repo📂 ```git clone https://github.com/Ketan2J/ToDo-App-NodeJS```
+   - npm init
+   - Install all dependencies:
+   - npm i body-parser
+   - npm i ejs
+   - npm i mongoose
+   - npm i express
+   - npm i nodemon
+2. Now run app: ```npm start```
 3. Open any browser and go to http://localhost:3000
 
 👉Technologies Used🤖
